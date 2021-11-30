@@ -1,0 +1,213 @@
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#image-uploader-display #gallery_load {
+  background-color: #EEE;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px 0 16px 0;
+}
+#image-uploader-display #gallery_load #image_sortable img {
+  border: 2px solid #EEE;
+  box-shadow: 0 0 1px 1px #999;
+  margin: 0;
+  vertical-align: middle;
+  transition: box-shadow .1s, border .1s;
+  width: 100px;
+  height: 100px;
+}
+
+#image-uploader-display #gallery_load #image_sortable img:hover {
+  cursor: pointer;
+}
+
+#image-uploader-display #gallery_load #image_sortable img.remove {
+  border: 2px solid red;
+}
+
+/* image_sortable */
+#image-uploader-display #gallery_load #image_sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#image-uploader-display #gallery_load #image_sortable ul {
+  display: inline-block;
+}
+#image-uploader-display #gallery_load #image_sortable li {
+  background: #a9bdd3;
+  background: -moz-radial-gradient(center, ellipse cover,  #a9bdd3 1%, #dce1e5 100%);
+  background: -webkit-radial-gradient(center, ellipse cover,  #a9bdd3 1%,#dce1e5 100%);
+  background: radial-gradient(ellipse at center,  #a9bdd3 1%,#dce1e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9bdd3', endColorstr='#dce1e5',GradientType=1 );
+
+  border-radius: 5px;
+  margin: 5px;
+  padding: .8em;
+  width: auto;
+  display: inline-block;
+}
+#image-uploader-display input[type="button"] {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+#image-uploader-display input[type="button"]:hover {
+  cursor: pointer;
+}
+#image-uploader-display #select_images {
+  background-color: #ad9f9f;
+  color: #000;
+}
+#image-uploader-display #select_images {
+  background-color: #ad9f9f;
+  color: #000;
+}
+#image-uploader-display #delete_images {
+  background-color: #f76f6f;
+  color: #000;
+}
+/* Copy Past Shortcode div */
+#image-uploader-display #shrtcde {
+  background-color: #e2e2e2;
+  border-radius: 3px;
+}
+#image-uploader-display #shrtcde p.shortcodes {
+  background-color: #EEE;
+  border-radius: 3px;
+  color: #666;
+  font-size: 1.1rem;
+  padding: 5px;
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+#image-uploader-display #shrtcde p.shortcodes:hover {
+  cursor: pointer;
+}
+#image-uploader-display #shrtcde section {
+  display: none;
+  margin: 10px;
+}
+#image-uploader-display #shrtcde table {
+  text-align: center;
+  width: 100%;
+}
+#image-uploader-display #shrtcde table tr td:first-child {
+  width: 12%;
+}
+#image-uploader-display #shrtcde table tr td {
+  vertical-align: middle;
+}
+#image-uploader-display #shrtcde button {
+  vertical-align: top;
+}
+#image-uploader-display #shrtcde input,
+#image-uploader-display #shrtcde #custom_shrtcode {
+  background: #EEEEEE;
+  border: 1px inset #EEEEEE;
+  font-size: .9rem;
+  padding: 7px;
+  width: 100%;
+}
+#image-uploader-display #shrtcde #custom_shrtcode {
+  border-radius: 3px;
+  height: 300px;
+  vertical-align: middle;
+  width: 98.7%;
+}
+
+/* Instructions */
+#image-uploader-display #miud_instructions {
+  background-color: #e2e2e2;
+  margin-bottom: 0;
+  border-radius: 3px;
+}
+#image-uploader-display #miud_instructions p.header {
+  background-color: #666;
+  border-radius: 3px;
+  color: #EEE;
+  font-size: 1.1rem;
+  padding: 5px;
+  margin-bottom: 0;
+}
+#image-uploader-display #miud_instructions p.header:hover {
+  cursor: pointer;
+}
+#image-uploader-display #miud_instructions section {
+  display: none;
+  padding: 10px;
+}
+
+#image-uploader-display #miud_instructions section .no-save {
+  font-size: 1.1rem;
+  color: #000;
+  background: #EEE;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px #999;
+  margin: 7px;
+  padding: 5px;
+}
+#image-uploader-display #miud_instructions section .controls {
+  float: left;
+  min-height: 200px;
+  padding: 5px;
+  width: 23.6%;
+}
+#image-uploader-display #miud_instructions section .controls:nth-child(even) {
+  margin: 0 .5%;
+}
+#image-uploader-display #miud_instructions section .controls h4 {
+  border-bottom: 1px solid #999;
+  margin: 0 0 10px 0;
+  font-size: .8rem;
+}
+
+#image-uploader-display #miud_instructions section .caveats {
+  background: #EEE;
+}
+#image-uploader-display #miud_instructions section .caveats h4 {
+  border-bottom: 0;
+  border-radius: 3px;
+  background: #F76F6F;
+  color: #FFF;
+  font-weight: bold;
+  padding: 3px;
+}
+
+#image-uploader-display #miud_instructions section .caveats div {
+  border: 1px solid #EEE;
+  border-radius: 3px;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+#image-uploader-display #miud_instructions section .caveats div ul {
+  list-style-type: disc !important;
+  font-size: .7rem;
+}
+#image-uploader-display #miud_instructions section #iud-display h3 {
+  border-bottom: 1px solid #999;
+}
+#image-uploader-display #miud_instructions section #iud-display table {
+  width: 100%;
+}
+#image-uploader-display #miud_instructions section #iud-display table td {
+  border: 1px solid #000;
+}
+#image-uploader-display #miud_instructions section #iud-display table tr td:first-child {
+  background-color: grey;
+  color: #FFF;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  width: 15%;
+}
+#image-uploader-display #miud_instructions section #iud-display table tr td:nth-child(2) {
+  padding-left: 20px;
+}

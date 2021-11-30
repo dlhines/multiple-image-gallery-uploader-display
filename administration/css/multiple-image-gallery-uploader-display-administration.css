@@ -1,0 +1,47 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#container-iud {
+  width: 98%;
+}
+h2 {
+  background-color: #666;
+  color: #FFF;
+  padding: 10px;
+}
+.admin-migud {
+  background-color: #dddddd;
+  padding: 10px;
+}
+.admin-migud #label {
+  color: #000;
+  float: left;
+  font-size: 1rem;
+  width: 25%;
+}
+.admin-migud #settings {
+  float: left;
+  width: 70%;
+}
+.admin-migud select {
+  min-height: 100px;
+  min-width: 225px;
+  padding: 0;
+}
+.admin-migud .buttons {
+  background-color: #cccccc;
+  border-top: 1px solid #666;
+  padding: 10px;
+}
+.admin-migud input[type="button"].save {
+  background-color: #EEE;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 1px #666;
+  padding: 10px;
+}
+.admin-migud input[type="button"].save:hover {
+  cursor: pointer;
+}

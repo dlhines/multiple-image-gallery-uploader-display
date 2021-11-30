@@ -1,0 +1,30 @@
+/* Display Images */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#image-uploader-display-render {
+  margin-bottom: 5px;
+  text-align: center !important;
+  padding: 8px 3px 0 3px;
+}
+#image-uploader-display-render::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#image-uploader-display-render a {
+
+}
+#image-uploader-display-render img {
+  width:100px;
+  height:100px;
+  padding: 0;
+  margin: 0;
+  transition: opacity .3s;
+}
+#image-uploader-display-render img:hover {
+  opacity: 1;
+}

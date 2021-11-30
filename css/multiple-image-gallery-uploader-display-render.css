@@ -1,0 +1,30 @@
+/* Display Images */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#migud-render {
+  margin-bottom: 5px;
+  text-align: center !important;
+  padding: 8px 3px 0 3px;
+}
+#migud-render::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#migud-render a {
+
+}
+#migud-render img {
+  width:100px;
+  height:100px;
+  padding: 0;
+  margin: 0;
+  transition: opacity .3s;
+}
+#migud-render img:hover {
+  opacity: 1;
+}

@@ -1,0 +1,85 @@
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#image-uploader-display #gallery_load {
+  background-color: #EEE;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px 0 16px 0;
+}
+#image-uploader-display #gallery_load #image_sortable img {
+  border: 2px solid #EEE;
+  box-shadow: 0 0 1px 1px #999;
+  margin: 0;
+  vertical-align: middle;
+  transition: box-shadow .1s, border .1s;
+  width: 60px;
+  height: 60px;
+}
+
+#image-uploader-display #gallery_load #image_sortable img:hover {
+  cursor: pointer;
+}
+
+#image-uploader-display #gallery_load #image_sortable img.remove {
+  border: 2px solid red;
+}
+
+/* image_sortable */
+#image-uploader-display #gallery_load #image_sortable {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#image-uploader-display #gallery_load #image_sortable ul {
+  display: inline-block;
+}
+#image-uploader-display #gallery_load #image_sortable li {
+  background: #a9bdd3;
+  background: -moz-radial-gradient(center, ellipse cover,  #a9bdd3 1%, #dce1e5 100%);
+  background: -webkit-radial-gradient(center, ellipse cover,  #a9bdd3 1%,#dce1e5 100%);
+  background: radial-gradient(ellipse at center,  #a9bdd3 1%,#dce1e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9bdd3', endColorstr='#dce1e5',GradientType=1 );
+
+  border-radius: 5px;
+  margin: 5px;
+  padding: .8em;
+  width: auto;
+  display: inline-block;
+}
+#image-uploader-display input[type="button"] {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+#image-uploader-display input[type="button"]:hover {
+  cursor: pointer;
+}
+#image-uploader-display #select_images {
+  background-color: #ad9f9f;
+  color: #000;
+}
+#image-uploader-display #select_images {
+  background-color: #ad9f9f;
+  color: #000;
+}
+#image-uploader-display #delete_images {
+  background-color: #f76f6f;
+  color: #000;
+}
+
+/* Instructions */
+#image-uploader-display {
+  background: green;
+}
+#image-uploader-display #miud_instructions {
+  background-color: #e2e2e2;
+  margin-bottom: 0;
+  border-radius: 3px;
+}

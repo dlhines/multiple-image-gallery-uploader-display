@@ -1,0 +1,16 @@
+/* Display Images */
+#image-uploader-display-render {}
+
+#image-uploader-display-render .rendered-iud img {
+  background-color: #edeaea;
+
+  border: 3px solid #999;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+
+  max-width:100px;
+  max-height:100px;
+  margin: 5px;
+  padding: 3px;
+}
